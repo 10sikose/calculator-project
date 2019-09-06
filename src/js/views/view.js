@@ -15,11 +15,17 @@ export const clearValue = () => {
     elements.display.textContent = '0';
 }
 
-export const displayInput = input => {
+export const addNumber = input => {
     if(elements.display.textContent === '0') {
         elements.display.textContent = input;
     } else { //ADD CONDITION FOR MAX NO OF DIGITS
         elements.display.textContent += input;
+    }
+}
+
+export const addDecimal = () => {
+    if(!elements.display.textContent.includes(',')) {
+        elements.display.textContent += ',';
     }
 }
 
