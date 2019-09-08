@@ -7,6 +7,8 @@ elements.ctrlsCont.addEventListener('click', evt => {
         view.addNumber(evt.target.textContent);
     } else if(evt.target.matches('.m-dec')) {
         view.addDecimal();
+    } else if(evt.target.closest('#backspace')) {
+        view.deleteLastChar();
     }
 })
 
