@@ -2,10 +2,9 @@
 import { elements } from './base';
 
 export const deleteLastChar = () => {
-    let value = elements.display.textContent;
+    const value = elements.display.textContent;
     if(value.length > 1) {
-        value = value.slice(0, -1);
-        elements.display.textContent = value;
+        elements.display.textContent = value.slice(0, -1);
     } else if(value.length === 1) {
         elements.display.textContent = '0';
     }
