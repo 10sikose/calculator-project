@@ -1,4 +1,5 @@
 import { elements } from './views/base';
+import { State } from './models/model';
 import * as view from './views/view';
 
 // CONTROL
@@ -13,5 +14,4 @@ elements.ctrlsCont.addEventListener('click', evt => {
         view.clearValue();
     }
 })
-
 
